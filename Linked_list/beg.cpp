@@ -43,10 +43,6 @@ void delete_beg(int n,node * head){
 }
 
 
-
-
-
-
 void delete_mid(node * head){
     node * ptr=head;
     node * ptr2=head;
@@ -62,31 +58,17 @@ void delete_mid(node * head){
 }
 
 
-
-
-
-
 void rev(node * head){
-    
+    node * ptr=head;
+    node * nxt=NULL;
+    node * prev=NULL;
+    while(ptr!=NULL){
+        nxt=ptr->next;
+        ptr->next=prev;
+        prev=ptr;
+        ptr=nxt;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 int main()
 {
