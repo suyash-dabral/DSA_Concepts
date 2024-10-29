@@ -1,3 +1,5 @@
+//Generate all subarrays
+
 #include<bits/stdc++.h>
 using namespace std;
 
